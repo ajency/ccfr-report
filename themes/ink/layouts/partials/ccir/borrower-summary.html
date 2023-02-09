@@ -1,0 +1,160 @@
+{{$className := .className}}
+{{if .borrower_summary}}
+  {{range .borrower_summary}}
+    {{if or .accounts .balences}}
+      <table class="report-table bordered-table report-table-style2 padding-0 {{if $className}}{{$className}}{{end}}">
+        <thead>
+          <tr>
+            {{if .accounts}}
+              <th style="width: 39%">ACCOUNTS<span class="subHeading">(#)</span></th>
+            {{end}}
+            {{if .balances}}
+              <th>BALANCES<span class="subHeading">(₹)</span></th>
+            {{end}}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {{if .accounts}}
+              <td>
+                {{range .accounts}}
+                  <table>
+                    <tr>
+                      {{range .row}}
+                        <td {{if .width}}width="{{.width}}"{{end}} class="{{if .status}}{{.status}}{{end}}">
+                          <p class="count">{{.content}}</p>
+                          <p class="count-title">{{.title}}</p>
+                        </td>
+                      {{end}}
+                    </tr>
+                  </table>
+                {{end}}
+              </td>
+            {{end}}
+            {{if .balances}}
+              <td class="balance-td">
+                {{range .balances}}
+                  <table>
+                    <tr>
+                      {{range .row}}
+                        <td {{if .width}}width="{{.width}}"{{end}} class="{{if .status}}{{.status}}{{end}}">
+                          <p class="count">{{safeHTML .content}}</p>
+                          <p class="count-title">{{.title}}</p>
+                        </td>
+                      {{end}}
+                    </tr>
+                  </table>
+                {{end}}
+              </td>
+            {{end}}
+          </tr>
+        </tbody>
+      </table>
+    {{end}}
+
+    <table class="tables-group mb-15">
+      <tr>
+        {{if .delinquency}}
+          <td class="delinquency-table">
+            <table
+              class="report-table bordered-table report-table-style2 padding-0"
+            >
+              <thead>
+                <tr>
+                  <th>
+                    delinquency<span class="subHeading"
+                      >(COUNT OF BREACH INSTANCES)</span
+                    >
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    {{range .delinquency}}
+                      <table>
+                        <tr>
+                          {{range .row}}
+                            <td>
+                              <p class="count {{if .state}}{{.state}}{{end}}">{{.content}}</p>
+                              <p class="count-title">{{.title}}</p>
+                              <p class="count-subtitle">{{.subtitle}}</p>
+                            </td>
+                          {{end}}
+                        </tr>
+                      </table>
+                    {{end}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        {{end}}
+        {{if .derogatory}}
+          <td class="derogatory-table">
+            <table
+              class="report-table bordered-table report-table-style2 padding-0"
+            >
+              <thead>
+                <tr>
+                  <th>deROGATORY</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    {{range .derogatory}}
+                      <table>
+                        <tr>
+                          {{range .row}}
+                            <td>
+                              <p class="count-text">{{safeHTML .content}}</p>
+                              <p class="count-title">{{.title}}</p>
+                              <p class="count-subtitle">{{.subtitle}}</p>
+                            </td>
+                          {{end}}
+                        </tr>
+                      </table>
+                    {{end}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        {{end}}
+        {{if .recent_enquiry}}
+          <td class="recent-enquiry-table">
+              <table
+                class="report-table bordered-table report-table-style2 padding-0"
+              >
+                <thead>
+                  <tr>
+                    <th>RECENT ENQUIRY</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      {{range .recent_enquiry}}
+                        <table>
+                          <tr>
+                            {{range .row}}
+                              <td {{if .width}}width="{{.width}}"{{end}} class="{{if .status}}{{.status}}{{end}}">
+                                <p class="count">{{.content}}</p>
+                                <p class="count-title">{{.title}}</p>
+                              </td>
+                            {{end}}
+                          </tr>
+                        </table>
+                      {{end}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </td>
+        {{end}}
+      </tr>
+    </table>
+
+  {{end}}
+{{end}}

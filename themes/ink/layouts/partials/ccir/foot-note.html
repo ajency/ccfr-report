@@ -1,0 +1,11 @@
+{{$spacing := .spacing}}
+<table class="foot-note">
+    <tr>
+        <td>
+            {{if .note}}<span class="note">{{.note}}</span>{{end}}
+            {{if .notations}}
+                <span class="notations">{{range .notations}}<span class="notation" style="margin-right: {{$spacing}};">{{safeHTML .}}</span>{{end}}</span>
+            {{end}}
+        </td>
+    </tr>
+</table>

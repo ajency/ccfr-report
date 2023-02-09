@@ -1,0 +1,24 @@
+<!-- table title | start -->
+<table id="table-title" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <tr>
+        <td>
+            <h1 class="table-title {{.className}}">{{ safeHTML .tableTitle }} {{ if .tableInfo }}{{ partial "info-icon" (dict "message" .tableInfo "className" "middle")}}{{ end }}</h1>
+        </td>
+        {{if .refNo }}
+        <td class="right-side refNo">
+            <p class="ref-no"><span class="title">reference number</span><span class="font-20-bold">{{ .refNo }}</span></p>
+        </td>
+        {{end}}
+        {{if or .oldestTrade .recentTrade}}
+        <td class="right-side trades">
+            {{if .oldestTrade}}
+                <p class="trade"><span class="title">OLDEST TRADE</span> : {{.oldestTrade}}</p>
+            {{end}}
+            {{if .recentTrade}}
+                <p class="trade"><span class="title">RECENT TRADE</span> : {{.recentTrade}}</p>
+            {{end}}
+        </td>
+        {{end}}
+    </tr>
+</table>
+<!-- table title | end -->

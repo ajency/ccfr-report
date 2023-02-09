@@ -1,0 +1,29 @@
+{{$footNote:= .footNote}}
+<table class="report-table bordered-table report-table-style3 padding-0 {{if eq $footNote true}}mb-15{{end}}">
+  <thead>
+    <tr>
+      <th class="title">ALERTS</th>
+    </tr>
+  </thead>
+  {{if .alertsData}}
+    <tbody>
+      <tr>
+          <td>
+              {{range .alertsData}}
+                  <table>
+                      <tr>
+                        {{range .row}}
+                          <td class="alerts-list">
+                              {{range .column}}
+                                <p>{{safeHTML .}}</p>
+                              {{end}}
+                          </td>
+                          {{end}}
+                      </tr>
+                  </table>
+              {{end}}
+          </td>
+      </tr>
+    </tbody>
+  {{end}}
+</table>
