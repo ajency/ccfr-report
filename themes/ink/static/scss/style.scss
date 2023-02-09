@@ -205,7 +205,7 @@ body {
   .id_details {
     text-align: right;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 24px;
     color: #2c2c2c;
     padding-bottom: 10px;
@@ -220,7 +220,7 @@ body {
   .td-desc {
     font-style: normal;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 24px;
     color: #2c2c2c;
     text-transform: none;
@@ -423,7 +423,7 @@ body {
 
       .factor-rating {
         font-weight: 600;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 19px;
         color: #006685;
         margin-bottom: 20px;
@@ -431,7 +431,7 @@ body {
 
       .factor-title {
         font-weight: 600;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 24px;
         color: #2c2c2c;
       }
@@ -592,7 +592,7 @@ body {
       .line {
         font-family: "Intro Book";
         font-weight: 600;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.02em;
         color: #acacac;
@@ -607,7 +607,7 @@ body {
     .inactive {
       padding: 0px !important;
       text-align: right;
-      font-size: 19px;
+      font-size: 18px;
       line-height: 19px;
 
       &.status {
@@ -671,7 +671,7 @@ body {
 
         td {
           font-weight: 600;
-          font-size: 19px;
+          font-size: 18px;
           padding: 20px 20px 18px;
 
           &.td-title {
@@ -979,7 +979,7 @@ body {
 
   .empty-state {
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 40px;
     color: #2c2c2c;
 
@@ -1105,7 +1105,7 @@ body {
         td {
           padding: 15px 20px;
           font-weight: 600;
-          font-size: 19px;
+          font-size: 18px;
           line-height: 24px;
           color: #2c2c2c;
         }
@@ -1159,7 +1159,7 @@ body {
       td {
         padding: 10px 20px;
         font-weight: 600;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 24px;
         color: #2c2c2c;
         vertical-align: baseline;
@@ -1260,7 +1260,7 @@ tfoot {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #000000;
@@ -1315,7 +1315,7 @@ tfoot {
 .info-light-text {
   margin: 0;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 18px;
   // line-height: 24px;
   line-height: 30px;
   color: #707070;
@@ -1518,7 +1518,7 @@ tfoot {
 .yeild-indicators {
   .indicator {
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 19px;
     color: #2c2c2c;
     text-transform: none;
@@ -2590,6 +2590,7 @@ $dark: #2C2C2C;
 
     .count-subtitle {
       @include fontStyle(12px, 18px, 600);
+      color: $grey5;
     }
 
     .count.green-state {
@@ -2622,7 +2623,7 @@ $dark: #2C2C2C;
     }
 
     td {
-      @include fontStyle(18px, 24px, 600);
+      @include fontStyle(18px, 24px, 400);
 
       table {
         padding: 20px 0px;
@@ -3646,4 +3647,53 @@ $dark: #2C2C2C;
   &-10{
     padding-bottom: 10px !important;
   }
+}
+
+.border-color-light{
+  border-color: #DDDDDD !important;
+}
+.border-color-dark{
+  border-color: #ACACAC !important;
+}
+
+.border-color-style1{
+  th, td{
+    border-color: #DDDDDD !important;
+  }
+  .main-top-head{
+    th{
+      border-color: #ACACAC !important;
+    }
+  }
+  .main-sub-head-top{
+    th{
+      border-top-color: #ACACAC !important;
+    }
+  }
+  .border-bottom-dark{
+    border-bottom-color:#ACACAC !important;
+  }
+  .border-top-dark{
+    border-top-color:#ACACAC !important;
+  }
+  .border-top-light{
+    border-top-color:#DDDDDD !important;
+  }
+  .border-right-light, &.empty-th-parent .border-right.border-right-light{
+    border-right-color:#DDDDDD !important;
+  }
+}
+
+.glossary-table{
+  tr{
+    &:not(:last-child){
+      td{
+        border-bottom: 1px solid #DDDDDD;
+      }
+    }
+  }
+}
+
+.report-table.report-base-table tr th.valign-bottom{
+  vertical-align: bottom !important;
 }

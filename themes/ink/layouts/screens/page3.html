@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CREDIT HEALTH INSIGHTS (MFI)" "className" "regular") }}
+            {{ partial "ccir/alerts-table" (dict "alertsData" .Site.Data.ccir.alerts_health_insights "footNote" true) }}
+            {{ partial "ccir/foot-note" (dict "note" "Place for footnote for above section") }}
+            {{ partial "spacer" (dict "space" "60") }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "PRODUCT SUMMARY" "className" "regular") }}
+            {{ partial "ccir/product-summary-table" (dict "footNote" true) }}
+            {{ partial "ccir/foot-note" (dict "note" "Dispute reported in one or two tradelines" "notations" .Site.Data.ccir.notations_ps "spacing" "20px") }}
+        </td>
+    </tr>
+</table>
+
+{{ end }}
