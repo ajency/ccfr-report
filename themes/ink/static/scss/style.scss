@@ -1994,6 +1994,9 @@ tfoot {
 }
 
 .mb {
+  &-0 {
+    margin-bottom: 0px !important;
+  }
   &-2 {
     margin-bottom: 2px !important;
   }
