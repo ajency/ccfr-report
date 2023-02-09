@@ -1,0 +1,23 @@
+[
+  {
+    "row": [
+      {
+        "title": "CONSUMER DETAILS",
+        "checked": true,
+        "width": "18%"
+      },
+      {
+        "title": "MFI DETAILS",
+        "checked": true,
+        "width": "15%"
+      },
+      {
+        "title": "FARM DETAILS",
+        "checked": true,
+        "width": "15%"
+      },
+      {},
+      {}
+    ]
+  }
+]

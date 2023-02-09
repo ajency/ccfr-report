@@ -1,0 +1,192 @@
+[
+  {
+    "mainTableClasses": "valign-top-table",
+    "footerTableClasses": "",
+    "colgroups": [],
+    "mainTableHead": [
+      {
+        "heading": "STATE"
+      },
+      {
+        "heading": "DISTRICT"
+      },
+      {
+        "heading": "TEHSIL"
+      },
+      {
+        "heading": "VILLAGE"
+      },
+      {
+        "heading": "KHEWAT"
+      },
+      {
+        "heading": "MURABBA"
+      },
+      {
+        "heading": "KHARSA"
+      }
+    ],
+    "mainTableBody": [
+      {
+        "data": [
+          {
+            "content": "Haryana",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Faridabad",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Ballabgarh",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Dyalpur",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "100",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "20",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "10",
+            "classes": "fw-regular"
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "content": "Haryana",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Faridabad",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Ballabgarh",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Dyalpur",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "100",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "20",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "18",
+            "classes": "fw-regular"
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "content": "Haryana",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Faridabad",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Ballabgarh",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Dyalpur",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "100",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "20",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "20",
+            "classes": "fw-regular"
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "content": "Haryana",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Faridabad",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Ballabgarh",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Dyalpur",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "100",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "20",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "21",
+            "classes": "fw-regular"
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "content": "Haryana",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Faridabad",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Ballabgarh",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "Dyalpur",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "100",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "20",
+            "classes": "fw-regular"
+          },
+          {
+            "content": "22",
+            "classes": "fw-regular"
+          }
+        ]
+      }
+    ]
+  }
+]

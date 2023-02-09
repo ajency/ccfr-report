@@ -6,15 +6,15 @@
         "width": "21%"
       },
       {
-        "heading": "IDENTIFICATION(S)",
+        "heading": "ID NO. (TYPE)",
         "width": "32%"
       },
       {
-        "heading": "TELEPHONE(S)",
+        "heading": "CONTACT DETAILS",
         "width": "27.6%"
       },
       {
-        "heading": "ADDRESS(ES)"
+        "heading": "ADDRESS"
       }
     ],
     "tBody": [
@@ -92,14 +92,7 @@
           {
             "td": [
               {
-                "RESIDENTIAL ADDRESS": "Mahindra City, Capgemini, Chennai, Tamil Nadu, India - 603002"
-              }
-            ]
-          },
-          {
-            "td":[
-              {
-                "OFFICE ADDRESS": "One Indiabulls Centre, Tower 2A 19th Floor, Senapati Bapat Marg. Elphinstone Road, Mumbai"
+                "ADDRESS": "Mahindra City, Capgemini, Chennai, Tamil Nadu, India - 603002"
               }
             ]
           }

@@ -20,5 +20,14 @@
         </td>
     </tr>
 </table>
+{{ partial "spacer" (dict "space" "40") }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM SUMMARY" "className" "regular") }}
+            {{ partial "ccfr/consumer-farm-summary-v2" (dict "comsumerFarmSummary" .Site.Data.server_cir_no_response.consumer_farm_summary_v2.comsumerFarmSummary) }}
+        </td>
+    </tr>
+</table>
 
 {{ end }}

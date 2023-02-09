@@ -4,7 +4,7 @@
     <tr>
         <td>
 
-            {{ partial "ccir/report-title" (dict "report_title" "COMPREHENSIVE CREDIT INFORMATION REPORT") }}
+            {{ partial "page-title" (dict "pageTitle" "CIBIL CREDIT AND FARM REPORT" "pageTitleSmall" "in partnership with <b>SatSure</b>" "className" "regular text-primary-blue mb-2" ) }}
 
             {{partial "ccir/report-heading" (dict "heading" "MOHANA PARAB")}}
 
@@ -17,22 +17,29 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "ENQUIRY INPUT INFORMATION" "refNo" "5653AFG34" "className" "regular") }}
-            {{ partial "ccir/table-style1" (dict "tableData" .Site.Data.ccir.enquiry_input_info ) }}
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER ENQUIRY INFORMATION" "refNo" "5653AFG34" "className" "regular") }}
+            {{ partial "ccir/table-style1" (dict "tableData" .Site.Data.ccfr.enquiry_input_info ) }}
         </td>
     </tr>
 </table>
 
-{{ partial "ccir/request-error" (dict "message" "YOUR REQUEST HAS BEEN REJECTED BY THE SERVER. PLEASE MAKE THE APPROPRIATE CHANGE AND RE-SUBMIT THE REQUEST OR CONTACT THE SYSTEM ADMINISTRATOR.") }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "FARM ENQUIRY INFORMATION" "className" "regular") }}
+            {{ partial "ccir/report-base-table" (dict "tableData" .Site.Data.ccfr.farm_enquiry_info "footerTableColspan" "7") }}
+        </td>
+    </tr>
+</table>
 
-{{ partial "table-title" (dict "tableTitle" "PRESENCE IN" ) }}
-{{ partial "ccir/checkboxes" (dict "checkboxesData" .Site.Data.ccir.checkboxes) }}
+{{ partial "table-title" (dict "tableTitle" "BUREAU FOOTPRINT" ) }}
+{{ partial "ccir/checkboxes" (dict "checkboxesData" .Site.Data.ccfr.checkboxes) }}
 
 <table class="no-break">
     <tr>
         <td>
             {{ partial "table-title" (dict "tableTitle" "SCORE AND ALGORITHM") }}
-            {{ partial "halfcircle-score-graph" (dict "scoreGraphs" .Site.Data.ccir.score_graphs "footNote" true ) }}
+            {{ partial "halfcircle-score-graph" (dict "scoreGraphs" .Site.Data.ccfr.score_graphs "footNote" true ) }}
             {{ partial "ccir/foot-note" (dict "note" "Place for footnote for above section") }}
             {{ partial "spacer" (dict "space" "35") }}
         </td>
