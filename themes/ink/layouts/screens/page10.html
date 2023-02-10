@@ -3,7 +3,9 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "ccir/table-style2" (dict "tableData" .Site.Data.ccir.borrower_details2 ) }}
+            {{ partial "table-title" (dict "tableTitle" "ENQUIRY DETAILS (36 MTHS)" "className" "regular") }}
+            {{ partial "ccir/report-base-table" (dict "tableData" .Site.Data.ccir.enquiry_details "footerTableColspan" "4") }}
+            {{ partial "spacer" (dict "space" "20") }}
         </td>
     </tr>
 </table>
@@ -11,15 +13,10 @@
 <table class="no-break">
     <tr>
         <td>
-            {{partial "ccir/report-account-table" (dict "accountData" .Site.Data.ccir.cons_tradeline_ac7)}}
-        </td>
-    </tr>
-</table>
-
-<table class="no-break">
-    <tr>
-        <td>
-                {{partial "ccir/report-account-table" (dict "accountData" .Site.Data.ccir.cons_tradeline_ac8)}}
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER DISPUTE REMARKS") }}
+            {{ partial "spacer" (dict "space" "24") }}
+            {{ partial "table-title" (dict "tableTitle" "DISPUTES" "className" "regular") }}
+            {{ partial "ccir/report-base-table" (dict "tableData" .Site.Data.ccir.disputes "footerTableColspan" "2") }}
         </td>
     </tr>
 </table>

@@ -3,8 +3,8 @@
 <table class="no-break">
     <tr>
         <td>
-                {{partial "ccir/report-heading" (dict "heading" "CONSUMER TRADELINE" "iconUrl" "images/static-images/consumer-tradeline-icon.png")}}
-                {{partial "ccir/report-account-table" (dict "accountData" .Site.Data.ccir.cons_tradeline_ac3)}}
+                {{partial "ccir/report-heading" (dict "heading" "MFI TRADELINE" "iconUrl" "images/static-images/mfi-tradeline-icon.png")}}
+                {{ partial "ccir/table-style2" (dict "tableData" .Site.Data.ccir.borrower_details ) }}
         </td>
     </tr>
 </table>
@@ -12,7 +12,15 @@
 <table class="no-break">
     <tr>
         <td>
-                {{partial "ccir/report-account-table" (dict "accountData" .Site.Data.ccir.cons_tradeline_ac4)}}
+            {{partial "ccir/report-account-table" (dict "accountData" .Site.Data.ccfr.cons_tradeline_ac3)}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+                {{partial "ccir/report-account-table" (dict "accountData" .Site.Data.ccfr.cons_tradeline_ac4)}}
         </td>
     </tr>
 </table>

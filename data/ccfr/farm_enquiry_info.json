@@ -1,6 +1,6 @@
 [
   {
-    "mainTableClasses": "valign-top-table",
+    "mainTableClasses": "valign-top-table no-horizontal-border",
     "footerTableClasses": "",
     "colgroups": [],
     "mainTableHead": [
@@ -127,31 +127,31 @@
         "data": [
           {
             "content": "Haryana",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           },
           {
             "content": "Faridabad",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           },
           {
             "content": "Ballabgarh",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           },
           {
             "content": "Dyalpur",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           },
           {
             "content": "100",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           },
           {
             "content": "20",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           },
           {
             "content": "21",
-            "classes": "fw-regular"
+            "classes": "fw-regular pb-0"
           }
         ]
       },

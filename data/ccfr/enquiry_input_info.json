@@ -6,15 +6,15 @@
         "width": "21%"
       },
       {
-        "heading": "ID NO. (TYPE)",
+        "heading": "IDENTIFICATION(S)",
         "width": "32%"
       },
       {
-        "heading": "CONTACT DETAILS",
+        "heading": "TELEPHONE(S)",
         "width": "27.6%"
       },
       {
-        "heading": "ADDRESS"
+        "heading": "ADDRESS(ES)"
       }
     ],
     "tBody": [

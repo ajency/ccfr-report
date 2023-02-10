@@ -32,13 +32,13 @@
     </tr>
 </table>
 
-{{ partial "table-title" (dict "tableTitle" "BUREAU FOOTPRINT" ) }}
+{{ partial "table-title" (dict "tableTitle" "BUREAU FOOTPRINT" "className" "regular") }}
 {{ partial "ccir/checkboxes" (dict "checkboxesData" .Site.Data.ccfr.checkboxes) }}
 
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "SCORE AND ALGORITHM") }}
+            {{ partial "table-title" (dict "tableTitle" "SCORE AND ALGORITHM" "className" "regular") }}
             {{ partial "halfcircle-score-graph" (dict "scoreGraphs" .Site.Data.ccfr.score_graphs "footNote" true ) }}
             {{ partial "ccir/foot-note" (dict "note" "Place for footnote for above section") }}
             {{ partial "spacer" (dict "space" "35") }}

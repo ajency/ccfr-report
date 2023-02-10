@@ -3,6 +3,17 @@
 <table class="no-break">
     <tr>
         <td>
+            {{ partial "table-title" (dict "tableTitle" "Insights on Demographic DETAILS" "className" "regular") }}
+            {{ partial "ccir/alerts-table" (dict "alertsData" .Site.Data.ccir.alerts_demographic_details "footNote" true) }}
+            {{ partial "ccir/foot-note" (dict "note" "Place for footnote for above section") }}
+            {{ partial "spacer" (dict "space" "60") }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
             {{ partial "table-title" (dict "tableTitle" "EMPLOYMENT INFORMATION") }}
             {{ partial "spacer" (dict "space" "20") }}
             {{ partial "table-title" (dict "tableTitle" "CONSUMER" "className" "medium") }}

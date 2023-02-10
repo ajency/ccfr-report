@@ -48,14 +48,4 @@
     </tr>
 </table>
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "table-title" (dict "tableTitle" "Insights on Demographic DETAILS" "className" "regular") }}
-            {{ partial "ccir/alerts-table" (dict "alertsData" .Site.Data.ccir.alerts_demographic_details "footNote" true) }}
-            {{ partial "ccir/foot-note" (dict "note" "Place for footnote for above section") }}
-        </td>
-    </tr>
-</table>
-
 {{ end }}

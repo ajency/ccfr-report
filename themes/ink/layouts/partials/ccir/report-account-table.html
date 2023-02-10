@@ -11,11 +11,11 @@
                             <tr>
                                 <td class="font-20-bold account-table-title">{{.account_no}}. ACCOUNT</td>
                                 <td width="70%" class="dates">
-                                    <span class="title-blue">DATE OPENED</span><span class="colon">:</span>{{.DATE_OPENED}}
+                                    <span class="title-blue">DATE OPENED</span><span class="colon">:</span>{{safeHTML .DATE_OPENED}}
                                     <span class="vertical-separator"><span></span></span>
-                                    <span class="title-blue">DATE CLOSED</span><span class="colon">:</span>{{.date_closed}}
+                                    <span class="title-blue">DATE CLOSED</span><span class="colon">:</span>{{safeHTML .date_closed}}
                                     <span class="vertical-separator"><span></span></span>
-                                    <span class="title-blue">DATE REPORTED & CERTIFIED</span><span class="colon">:</span>{{.DATE_REPORTED_and_CERTIFIED}}
+                                    <span class="title-blue">DATE REPORTED & CERTIFIED</span><span class="colon">:</span>{{safeHTML .DATE_REPORTED_and_CERTIFIED}}
                                 </td>
                                 <td style="text-align:right;" class="status-text">{{if .active}}active{{else}}Inactive{{end}}</td>
                                 <td width="53" style="text-align:right;" class="status"><img src="{{if .active}}{{ "images/static-images/active.png" | relURL }}{{else}}{{ "images/static-images/inactive.png" | relURL }}{{end}}"></td>
@@ -34,7 +34,7 @@
                                 </colgroup>
                                 <thead>
                                     {{range .account_info}}
-                                        <th>{{.heading}}</th>
+                                        <th>{{safeHTML .heading}}</th>
                                     {{end}}
                                 </thead>
                                 <tbody>
@@ -53,10 +53,10 @@
                                                                 {{range .td}}
                                                                     <td {{if .colspan}} colspan="{{.colspan}}" {{end}}>
                                                                         {{if .heading.title}}
-                                                                            <span class="title-blue {{.heading.classes}}">{{.heading.title}}</span>
+                                                                            <span class="title-blue {{.heading.classes}}">{{safeHTML .heading.title}}</span>
                                                                         {{end}}
                                                                         {{if .content.title}}
-                                                                            <span class="{{.content.classes}}">{{.content.title}}</span>
+                                                                            <span class="{{.content.classes}}">{{safeHTML .content.title}}</span>
                                                                         {{end}}
                                                                         {{if .content.late_payments}}
                                                                             <table class="payment-status">
@@ -69,7 +69,7 @@
                                                                                     <tr>
                                                                                         <td rowspan="2">
                                                                                             {{range .content.late_payments}}
-                                                                                                <div class="status-box {{.status}}"><span>{{.bucket}}</span><span>{{.instance}}</span></div>
+                                                                                                <div class="status-box {{.status}}"><span>{{safeHTML  .bucket}}</span><span>{{safeHTML .instance}}</span></div>
                                                                                             {{end}}
                                                                                         </td>
                                                                                         <td class="grey5 pb-7">DPD BUCKETS</td>
@@ -101,11 +101,11 @@
                                 <thead>
                                     <th>DAYS PAST DUE/ASSET CLASSIFICATION</th>
                                     <th width="70%" class="dates">
-                                        <span class="title-blue">PAYMENT START DATE</span><span class="colon">:</span>{{.payment_start_date}}
+                                        <span class="title-blue">PAYMENT START DATE</span><span class="colon">:</span>{{safeHTML .payment_start_date}}
                                         <span class="vertical-separator"><span></span></span>
-                                        <span class="title-blue">PAYMENT END DATE</span><span class="colon">:</span>{{.payment_end_date}}
+                                        <span class="title-blue">PAYMENT END DATE</span><span class="colon">:</span>{{safeHTML .payment_end_date}}
                                         <span class="vertical-separator"><span></span></span>
-                                        <span class="title-blue">LAST PAYMENT DATE</span><span class="colon">:</span>{{.late_payment_date}}
+                                        <span class="title-blue">LAST PAYMENT DATE</span><span class="colon">:</span>{{safeHTML .late_payment_date}}
                                     </th>
                                 </thead>
                                 <tbody>
@@ -131,7 +131,7 @@
                                                     {{range .account_days}}
                                                         <tr>
                                                             {{range .td}}
-                                                                <td class=" {{if .classes}}{{.classes}}{{end}}">{{.record}}</td>
+                                                                <td class=" {{if .classes}}{{.classes}}{{end}}">{{safeHTML .record}}</td>
                                                             {{end}}
                                                         </tr>
                                                     {{end}}
@@ -160,7 +160,7 @@
                                     <thead>
                                         <tr>
                                             {{range .headings}}
-                                                <th>{{.title}}</th>
+                                                <th>{{safeHTML .title}}</th>
                                             {{end}}
                                         </tr>
                                     </thead>
@@ -169,7 +169,7 @@
                                     <tbody>
                                         <tr>
                                             {{range .body}}
-                                                <td>{{.content}}</td>
+                                                <td>{{safeHTML .content}}</td>
                                             {{end}}
                                         </tr>
                                     </tbody>

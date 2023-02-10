@@ -1,39 +1,29 @@
 [
   {
-    "account_no": 2,
-    "active": true,
-    "DATE_OPENED": "05/06/2018",
-    "date_closed": "<span class='grey6'>-</span>",
-    "DATE_REPORTED_and_CERTIFIED": "30/11/2021",
-    "payment_start_date": "10/07/2018",
-    "payment_end_date": "01/06/2021",
-    "late_payment_date": "01/06/2021",
-    "colgroup": ["20%", "40%"],
+    "account_no": 6,
+    "active": false,
+    "DATE_OPENED": "06/04/2015",
+    "date_closed": "21/12/22",
+    "DATE_REPORTED_and_CERTIFIED": "01/01/2015",
+    "payment_start_date": "13/01/20",
+    "payment_end_date": "14/12/22",
+    "late_payment_date": "02/12/22",
+    "colgroup": ["28%", "35%"],
     "account_info": [
       {
         "heading": "ACCOUNT INFORMATION",
+        "colgroup": ["58%"],
         "row": [
           {
             "td": [
               {
+                "colspan": 2,
                 "heading": {
-                  "title": "ACCOUNT TYPE"
+                  "title": "TYPE"
                 },
                 "content": {
-                  "title": "CREDIT CARD",
+                  "title": "JLG GROUP",
                   "classes": "font-20-bold"
-                }
-              }
-            ]
-          },
-          {
-            "td": [
-              {
-                "heading": {
-                  "title": "ACCOUNT NUMBER"
-                },
-                "content": {
-                  "title": "Not Disclosed"
                 }
               }
             ]
@@ -47,6 +37,14 @@
                 "content": {
                   "title": "Not Disclosed"
                 }
+              },
+              {
+                "heading": {
+                  "title": "BRANCH ID"
+                },
+                "content": {
+                  "title": "BI50000"
+                }
               }
             ]
           },
@@ -54,10 +52,38 @@
             "td": [
               {
                 "heading": {
-                  "title": "OWNERSHIP"
+                  "title": "Account Number"
                 },
                 "content": {
-                  "title": "Individual"
+                  "title": "BI10322"
+                }
+              },
+              {
+                "heading": {
+                  "title": "KENDRA ID"
+                },
+                "content": {
+                  "title": "K129329"
+                }
+              }
+            ]
+          },
+          {
+            "td": [
+              {
+                "heading": {
+                  "title": "OWNERSHIP INDICATOR"
+                },
+                "content": {
+                  "title": "Gaurantor"
+                }
+              },
+              {
+                "heading": {
+                  "title": "LOAN PURPOSE"
+                },
+                "content": {
+                  "title": "Laptop"
                 }
               }
             ]
@@ -66,32 +92,32 @@
       },
       {
         "heading": "AMOUNTS",
-        "colgroup": ["", "", "28%"],
+        "colgroup": ["33%", "42%", "25%"],
         "row": [
           {
             "td": [
               {
                 "heading": {
-                  "title": "SANCTIONED"
+                  "title": "CREDIT LIMIT"
                 },
                 "content": {
-                  "title": "₹ 42,000"
+                  "title": "₹ 95,632"
                 }
               },
               {
                 "heading": {
-                  "title": "Payment FreqUENCY"
+                  "title": "LAST PAYMENT"
                 },
                 "content": {
-                  "title": "Monthly"
+                  "title": "₹ 1,100"
                 }
               },
               {
                 "heading": {
-                  "title": "INTEREST RATE"
+                  "title": "EMI"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "₹ 1,100"
                 }
               }
             ]
@@ -100,26 +126,46 @@
             "td": [
               {
                 "heading": {
-                  "title": "CURRENT BALANCE"
+                  "title": "DISBURSEd"
                 },
                 "content": {
-                  "title": "₹ 2,596"
+                  "title": "₹ 61,205"
                 }
               },
               {
                 "heading": {
-                  "title": "Repayment tenure"
+                  "title": "actual payment"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "₹ 1,100"
                 }
               },
               {
                 "heading": {
-                  "title": "EMI"
+                  "title": "TENURE"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "10 Years"
+                }
+              }
+            ]
+          },
+          {
+            "td": [
+              {
+                "heading": {
+                  "title": "current balance"
+                },
+                "content": {
+                  "title": "₹ 0"
+                }
+              },
+              {
+                "heading": {
+                  "title": "REPAYMENT FREQUENCY"
+                },
+                "content": {
+                  "title": "Weekly"
                 }
               }
             ]
@@ -136,30 +182,10 @@
               },
               {
                 "heading": {
-                  "title": "COLLATERAL VALUE"
+                  "title": "NO. OF INSTALLMENTS"
                 },
                 "content": {
-                  "title": "₹ 250"
-                }
-              }
-            ]
-          },
-          {
-            "td": [
-              {
-                "heading": {
-                  "title": "ACTUAL PAYMENT"
-                },
-                "content": {
-                  "title": "₹ 0"
-                }
-              },
-              {
-                "heading": {
-                  "title": "COLLATERAL TYPE"
-                },
-                "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "127"
                 }
               }
             ]
@@ -173,6 +199,7 @@
             "td": [
               {
                 "colspan": 2,
+                "colgroup": ["54%"],
                 "heading": {
                   "title": "LATE PAYMENTS (36 months)"
                 },
@@ -181,22 +208,22 @@
                     {
                       "status": "blue",
                       "bucket": "1+",
-                      "instance": 6
+                      "instance": 11
                     },
                     {
                       "status": "yellow",
                       "bucket": "30+",
-                      "instance": 4
+                      "instance": 18
                     },
                     {
                       "status": "orange",
                       "bucket": "60+",
-                      "instance": 2
+                      "instance": 15
                     },
                     {
                       "status": "red",
                       "bucket": "90+",
-                      "instance": 0
+                      "instance": 11
                     }
                   ]
                 }
@@ -207,18 +234,18 @@
             "td": [
               {
                 "heading": {
-                  "title": "credit facility status"
+                  "title": "ACCOUNT STATUS"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "Closed"
                 }
               },
               {
                 "heading": {
-                  "title": "Written off (total AMOUNT)"
+                  "title": "WRITTEN-OFF DATE"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "05/06/2015"
                 }
               }
             ]
@@ -227,38 +254,18 @@
             "td": [
               {
                 "heading": {
-                  "title": "SUIT FILED/WILLFUL DEFAULT"
+                  "title": "WRITTEN-OFF (TOTAL AMT)"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "₹ 7,678"
                 }
               },
               {
                 "heading": {
-                  "title": "Written off (principle AMOUNT)"
+                  "title": "WRITTEN-OFF (REASON)"
                 },
                 "content": {
-                  "title": "<span class='grey6'>-</span>"
-                }
-              }
-            ]
-          },
-          {
-            "td": [
-              {
-                "heading": {
-                  "title": ""
-                },
-                "content": {
-                  "title": ""
-                }
-              },
-              {
-                "heading": {
-                  "title": "SETTLEMENT AMOUNT"
-                },
-                "content": {
-                  "title": "<span class='grey6'>-</span>"
+                  "title": "Delinquent"
                 }
               }
             ]
@@ -270,99 +277,11 @@
       {
         "td": [
           {
-            "record": "2018",
-            "classes": "title-blue"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
-          },
-          {
-            "record": "0"
-          }
-        ]
-      },
-      {
-        "td": [
-          {
-            "record": "2019",
-            "classes": "title-blue"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "0"
-          }
-        ]
-      },
-      {
-        "td": [
-          {
             "record": "2020",
             "classes": "title-blue"
           },
           {
-            "record": "0"
+            "record": "19"
           },
           {
             "record": "0"
@@ -374,28 +293,28 @@
             "record": "0"
           },
           {
-            "record": "0"
+            "record": "028"
           },
           {
-            "record": "0"
+            "record": "021"
           },
           {
-            "record": "0"
+            "record": "012"
           },
           {
-            "record": "0"
+            "record": "099"
           },
           {
-            "record": "0"
+            "record": "SUB"
           },
           {
-            "record": "0"
+            "record": "099"
           },
           {
-            "record": "0"
+            "record": "154"
           },
           {
-            "record": "0"
+            "record": "128"
           }
         ]
       },
@@ -406,58 +325,100 @@
             "classes": "title-blue"
           },
           {
-            "record": "0"
+            "record": "XXX"
+          },
+          {
+            "record": "SUB"
+          },
+          {
+            "record": "XXX"
+          },
+          {
+            "record": "DBT"
+          },
+          {
+            "record": "LOS"
+          },
+          {
+            "record": "096"
+          },
+          {
+            "record": "STD"
+          },
+          {
+            "record": "XXX"
+          },
+          {
+            "record": "000"
+          },
+          {
+            "record": "000"
+          },
+          {
+            "record": "000"
+          },
+          {
+            "record": "000"
+          }
+        ]
+      },
+      {
+        "td": [
+          {
+            "record": "2022",
+            "classes": "title-blue"
+          },
+          {
+            "record": "000"
+          },
+          {
+            "record": "000"
+          },
+          {
+            "record": "000"
+          },
+          {
+            "record": "15"
+          },
+          {
+            "record": "18"
+          },
+          {
+            "record": "04"
+          },
+          {
+            "record": "30"
+          },
+          {
+            "record": "09"
+          },
+          {
+            "record": "23"
+          },
+          {
+            "record": "12"
           },
           {
             "record": "0"
           },
           {
             "record": "0"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "9"
-          },
-          {
-            "record": "39"
-          },
-          {
-            "record": "70"
-          },
-          {
-            "record": "0"
-          },
-          {
-            "record": "5"
-          },
-          {
-            "record": "37"
-          },
-          {
-            "record": "67"
-          },
-          {
-            "record": "<span class='grey6'>-</span>"
           }
         ]
       }
     ],
-    "account_footer":[
+    "account_footer": [
       {
-        "colgroup":[
-          "25%"
-        ],
-        "headings":[
+        "colgroup": ["25%"],
+        "headings": [
           {
-            "title":"INFORMATION UNDER DISPUTE"
+            "title": "INFORMATION UNDER DISPUTE"
           },
           {
-            "title":"DISPUTE DATE"
+            "title": "DISPUTE DATE"
           }
         ],
-        "body":[
+        "body": [
           {
             "content": "Ownership Indicator in dispute"
           },
