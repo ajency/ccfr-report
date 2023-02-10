@@ -2,7 +2,7 @@
 <table id="table-title" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td>
-            <h1 class="table-title">
+            <h1 class="table-title {{if .className}}{{.className}}{{end}}">
                 {{ .tableTitle }}{{ if .info }}{{partial "info-icon" (dict "message" .info "className" "up1")}}{{ end }}
                 {{ if .subTitle }} <span class="table-subtitle">{{ .subTitle }}</span> {{ end }}
             </h1>
