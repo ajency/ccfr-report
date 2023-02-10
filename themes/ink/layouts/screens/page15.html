@@ -1,10 +1,33 @@
 {{ define "main" }}
 
+
 <table class="no-break">
     <tr>
         <td>
-            {{partial "ccir/report-heading" (dict "heading" "GLOSSARY")}}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.ccir.glossary_data2.table_head "tableBody" .Site.Data.ccir.glossary_data2.table_body "className" "text-break-format glossary-table nostripes"  "break" true "glossaryDataTable" true ) }}
+            {{ partial "table-title" (dict "tableTitle" "Regional Details" "className" "regular") }}
+            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "regionalDetails" .Site.Data.server_cir_no_response.regional_details.regionalDetails "footNote" true) }}
+            {{ partial "ccir/foot-note" (dict "note" "These values are calculated for the largest boundary") }}
+            {{ partial "spacer" (dict "space" "20") }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS" "tableInfo" "" "className" "regular") }}
+            {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "chart_title_info" "" "graph_image" "images/dynamic-images/rainfall-graph.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." "footNote" true) }}
+            {{ partial "ccir/foot-note" (dict "note" "These values are calculated for the largest boundary") }}
+            {{ partial "spacer" (dict "space" "20") }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+        {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "chart_title_info" "" "graph_image" "images/dynamic-images/ground-water-graph.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" "footNote" true) }}
+        {{ partial "ccir/foot-note" (dict "note" "These values are calculated for the largest boundary") }}
         </td>
     </tr>
 </table>

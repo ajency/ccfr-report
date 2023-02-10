@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{partial "ccir/report-heading" (dict "heading" "GLOSSARY")}}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.ccfr.glossary_data3.table_head "tableBody" .Site.Data.ccfr.glossary_data3.table_body "className" "text-break-format glossary-table nostripes"  "break" true "glossaryDataTable" true "headerTitle" "CCIR GLOSSARY") }}
+        </td>
+    </tr>
+</table>
+
+{{ end }}

@@ -1,4 +1,4 @@
-<table class="bordered-table padding-0 vertical-bar-graph bottom-border" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table class="bordered-table padding-0 vertical-bar-graph bottom-border {{if .footNote}}mb-15{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <thead>
         <tr>
             <th class="td-title border-bottom">{{.chart_title}} {{ if .chart_title_info }} {{ partial "info-icon" (dict "message" .chart_title_info ) }} {{ end }}</th>
