@@ -54,39 +54,39 @@
     "mainSubHead": [
       {
         "heading": "",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "<span class='grey5 font-14-regular'>(#)</span>",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "<span class='grey5 font-14-regular'>(#)</span>",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "<span class='grey5 font-14-regular'>(₹)</span>",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "<span class='grey5 font-14-regular'>(₹)</span>",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "<span class='grey5 font-14-regular'>(DAYS)</span>",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       },
       {
         "heading": "",
-        "classes": "text-center"
+        "classes": "text-center pt-0"
       }
     ],
     "mainTableBody": [
