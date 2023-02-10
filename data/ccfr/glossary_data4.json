@@ -4,7 +4,10 @@
             "title": "REPORT SECTION"
         },
         {
-            "title": "KEY TERM / CODE"
+            "title": "FARM DATA"
+        },
+        {
+            "title": "FARM CONTENT"
         },
         {
             "title": "DEscription"
@@ -13,30 +16,10 @@
     "table_body": [
         {
             "content": [
-                "Consumer Account Details",
-                "Day Past Due/Asset Classification",
-                "Start date: Beginning of the payment history<br/>End Date: End of the payment history<br/>000: Payment is made on the due date<br/>001-900: Payment is missed by number of days from the due date<br/>STD: Payments being made within 90 days<br/>SMA: Special account created for reporting Standard Accounts moving toward Sub-Standard<br/>SUB: Payments being made after 90 days<br/>DBT : The account has remained Sub-Standard for 12 months<br/>LSS : The account where loss has been identified and remains uncollectable<br/>XXX : Data not reported by Institution"
-            ]
-        },
-        {
-            "content": [
-                "Consumer Account Details",
-                "Information under dispute",
-                "Consumer has raised grievance request regarding issue in correctness of the data reported by Financial Institution"
-            ]
-        },
-        {
-            "content": [
-                "Enquiry Details",
-                "Not Disclosed",
-                "Enquiry made with other Members"
-            ]
-        },
-        {
-            "content": [
-                "Date",
-                "<span class='grey6'>-</span>",
-                "Dates are reported in the DD/MM/YYYY format"
+                "<span class='fw-bold'>Consumer Farm Score</span>",
+                "Farm Score",
+                "Farm Score",
+                "The farm score is calculated based on the agricultural parameters of the farms that belong to a farmer. It comprises of a base score (based on irrigation condition and cropping intensity of farms) and seasonal scores for kharif & rabi seasons, each calculated based on the farming history in the past 3 years.<br/>Insight: Farm Score reflects Overall Productivity & Revenue potential of the Farm"
             ]
         }
     ]
