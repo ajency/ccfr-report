@@ -2057,6 +2057,7 @@ tfoot {
   &-20 {
     margin-top: 20px !important;
   }
+
   &-30 {
     margin-top: 30px !important;
   }
@@ -3819,5 +3820,53 @@ $dark: #2C2C2C;
     &.pt-0 {
       padding-top: 0px !important;
     }
+  }
+}
+
+.farm-glossary-table {
+  tbody {
+    tr {
+      td {
+
+        &:first-child,
+        &:nth-child(2) {
+          background-color: #fff;
+          border-top: none;
+          border-bottom: none;
+        }
+
+        &:nth-child(3) {
+          padding-left: 0px;
+        }
+      }
+
+      &.line {
+        td {
+          border-top: 1px solid #ACACAC;
+        }
+      }
+
+      &.halfLine {
+        td {
+          //border-bottom: none;
+
+          &:nth-child(2) {
+            border-top: 1px solid #ACACAC;
+          }
+        }
+      }
+    }
+  }
+
+  &.inverted-color-table {
+    tbody tr:nth-child(even) {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.row-bb-none{
+  td{
+    border-bottom: none !important;
   }
 }
