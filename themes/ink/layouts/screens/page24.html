@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+    {{ partial "spacer" (dict "space" "25") }}
+
     {{ partial "farm-data-glossary" (dict "tableHead" .Site.Data.ccfr.farm_glossary_data2.table_head "tableBody" .Site.Data.ccfr.farm_glossary_data2.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "FARM DATA GLOSSARY" "break" true ) }}
 
     {{ partial "spacer" (dict "space" "270") }}
